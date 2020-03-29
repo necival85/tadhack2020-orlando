@@ -11,5 +11,123 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# Ignore atom editor config files
+.rsync_save.json
+.sync-config.cson
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+
+# Config Files #
+################
+config/**
+
+# Caches #
+##########
+.cache/**
+.cache
+
+# SSH configs #
+###############
+.ssh/**
+.ssh
+
+# Backup files #
+################
+*.swp
+.*.swp
+**/*.swp
+**/.*.swp
+*.swo
+.*.swo
+**/*.swo
+**/.*.swo
+*#
+*~
+*.bak
+*.bak_*
+*.bak-*
+.*#
+.*~
+.*.bak
+.*.bak_*
+.*.bak-*
+**/*#
+**/*~
+**/*.bak
+**/*.bak_*
+**/*.bak-*
+**/.*#
+**/.*~
+**/.*.bak
+**/.*.bak_*
+**/.*.bak-*
+
+# Merge conflict orig files #
+#############################
+*.orig
+.*.orig
+**/*.orig
+**/.*.orig
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Backup Directory
+backup/**
+
+# Logs #
+########
+logs/**
+*.log
+*_log
+**/*.log
+**/*_log
+
+# Mac OS DS_Store, in all subdirectories #
+##########################################
+.DS_Store
+**/.DS_Store
+._.DS_Store
+**/._.DS_Store
+.DS_Store?
+**/.DS_Store?
+._.DS_Store?
+**/._.DS_Store?
+
+# OS generated files #
+######################
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+##################################
+# Allow Placeholders in any folder
+!.placeholder
+!**/.placeholder
