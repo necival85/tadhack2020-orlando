@@ -3,6 +3,7 @@ window.onscroll = function() {scrollFunction()};
 var element = document.getElementById("body");
 function scrollFunction() {
   var shownavbar = $("#navbar").height();
+  //$("body").attr("data-offset", shownavbar);
   //console.log('shownavbar', shownavbar);
   if (document.body.scrollTop > shownavbar || document.documentElement.scrollTop > shownavbar) {
       $("#div-scroll-to-top").show();

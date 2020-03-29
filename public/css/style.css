@@ -1358,6 +1358,14 @@ pre code {
   }
 }
 
+.mh24px {
+  max-height: 24px;
+}
+
+.mh32px { 
+  max-height: 32px;
+}
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -3935,12 +3943,22 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  /* padding-top: 0.3125rem; */
+  /* padding-bottom: 0.3125rem; */
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  vertical-align: middle;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+  margin-top: -10px;
+}
+
+.navbar-brand .text {
+  font-size: 30px;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -9532,10 +9550,6 @@ body {
   color: #000000;
 }
 
-body.body-top-padding {
-  padding-top: 167px;
-}
-
 body a:hover {
   text-decoration: none;
 }
@@ -9739,7 +9753,7 @@ footer a:hover {
 
 .header-small .navbar {
   background: white;
-  padding: 18px 0px 18px 0px;
+  padding: 10px 0px 10px 0px;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
@@ -9749,6 +9763,15 @@ footer a:hover {
   top: -50px;
   margin-top: 50px;
   transition: margin-top 1s ease;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+.btn-phone {
+  padding: 5px 10px !important;
+  margin-left: 20px;
 }
 
 @media (min-width: 992px) {
@@ -9828,7 +9851,7 @@ footer a:hover {
 
 .navbar {
   background-color: #f7f8fa;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .navbar .navbar-toggler {
