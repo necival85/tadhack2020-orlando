@@ -28,6 +28,15 @@ function scrollToTop() {
   $('body').scrollspy({ target: '.navbar',offset: 0 });
 }
 
+function contactUsForm() {
+  var name = $('#contact-us-form').find('#Name').val();
+  var email = $('#contact-us-form').find('#Email').val();
+  var subject = $('#contact-us-form').find('#Subject').val();
+  var message = $('#contact-us-form').find('#Message').val();
+  var url = "mailto:jambu@voipawesome.com?from="+email+"&subject="+subject+"&body="+message+"%20-%20"+name;
+  window.open(url, "_blank");
+
+}
 
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({
@@ -54,6 +63,7 @@ $('.owl-carousel').owlCarousel({
 // SCROLLSPY
 $(document).ready(function() {
   scrollFunction();
+  $("#btn-contact-us-submit").click(function() { contactUsForm(); });
   $("#btn-scroll-to-top").click(function() { scrollToTop(); });
   $(".nav-link").click(function() {
       var t = $(this).attr("href");

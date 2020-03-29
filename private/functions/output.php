@@ -18,6 +18,11 @@ function data_uri($file, $mime) {
   return ('data:' . $mime . ';base64,' . $base64);
 } // END FUNCTION data_uri
 
+function xml_response($resp="") {
+  header('Content-Type: text/xml');
+  die($resp . "\n");
+} // END FUNCTION xml_response
+
 function json_response($resp=array()) {
   header('Content-Type: application/json');
   if (is_array($resp) || is_object($resp)) {

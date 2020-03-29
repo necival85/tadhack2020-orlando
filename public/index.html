@@ -18,12 +18,12 @@
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
     <div class="container">
       <div class="navbar-brand-wrapper d-flex w-100">
-        <a href="https://voipawesome.com" target="VOIP Awesome" class="navbar-brand">
+        <div class="navbar-brand">
             <img src="images/vai/voip-awesome-icon-380.png" style="max-height:55px;" alt="">
-            <font class="text sm-hidden">
+            <font class="text hidden-sm">
                 <font class="text text-danger"><b>VOIP</b></font> Awesome
             </font>
-        </a>
+        </div>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="mdi mdi-menu navbar-toggler-icon"></span>
         </button> 
@@ -52,6 +52,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#team-section">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-details-section">References</a>
           </li>
           <li class="nav-item btn-contact-us pl-4 pl-lg-0">
             <button class="btn btn-info" data-toggle="modal" data-target="#contactUsModal">Contact Us</button>
@@ -198,11 +201,11 @@
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
               <h5 class="pb-2">Social</h5>
               <div class="d-flex justify-content-center justify-content-md-start">
-                <a href="https://www.youtube.com/channel/UCkMzLTeupedWH34-VpGeWVQ" target="YouTube"><span class="mdi mdi-youtube"></span></a>
-                <a href="https://www.facebook.com/voipawesome/" target="Facebook"><span class="mdi mdi-facebook"></span></a>
-                <a href="https://twitter.com/voipawesome" target="Twitter"><span class="mdi mdi-twitter"></span></a>
-                <a href="https://www.instagram.com/voipawesome/" target="Instagram"><span class="mdi mdi-instagram"></span></a>
-                <a href="https://www.linkedin.com/company/voipawesome/" target="Linkedin"><span class="mdi mdi-linkedin"></span></a>
+                <a class="btn btn-rounded" href="https://www.youtube.com/channel/UCkMzLTeupedWH34-VpGeWVQ" target="YouTube"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-rounded" href="https://www.facebook.com/voipawesome/" target="Facebook"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-rounded" href="https://twitter.com/voipawesome" target="Twitter"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-rounded" href="https://www.instagram.com/voipawesome/" target="Instagram"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-rounded" href="https://www.linkedin.com/company/voipawesome/" target="Linkedin"><i class="fa fa-linkedin"></i></a>
               </div>
           </div>
         </div>  
@@ -218,14 +221,14 @@
               <h4 class="modal-title" id="contactUsModalLabel">Contact Us</h4>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="contact-us-form">
                 <div class="form-group">
                   <label for="Name">Name</label>
                   <input type="text" class="form-control" id="Name" placeholder="Name">
                 </div>
                 <div class="form-group">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="you@example-email.com">
+                  <input type="email" class="form-control" id="Email-1" placeholder="you@example.com">
                 </div>
                 <div class="form-group">
                   <label for="Subject">Subject</label>
@@ -239,7 +242,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Submit</button>
+              <button id="btn-contact-us-submit" type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
             </div>
           </div>
         </div>
