@@ -18,7 +18,12 @@
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
     <div class="container">
       <div class="navbar-brand-wrapper d-flex w-100">
-        <img src="images/vai/voip-awesome-icon-380.png" style="max-height:55px;" alt="">
+        <a href="https://voipawesome.com" target="VOIP Awesome" class="navbar-brand">
+            <img src="images/vai/voip-awesome-icon-380.png" style="max-height:55px;" alt="">
+            <font class="text sm-hidden">
+                <font class="text text-danger"><b>VOIP</b></font> Awesome
+            </font>
+        </a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="mdi mdi-menu navbar-toggler-icon"></span>
         </button> 
@@ -37,16 +42,19 @@
             <a class="nav-link nav-link-home" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features-section">Project</a>
+            <a class="nav-link" href="#project-section">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#digital-marketing-section">Diagram</a>  
+            <a class="nav-link" href="#diagram-section">Diagram</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#why-section">Why</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#team-section">Team</a>
           </li>
           <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#contactUsModal">Contact Us</button>
           </li>
         </ul>
       </div>
@@ -55,165 +63,76 @@
   </header>
   <div class="banner" >
     <div class="container">
-      <h1 class="font-weight-semibold">Search engine optimisation &<br>Marketing.</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Simple is a simple template with a creative design that solves all your marketing and SEO queries.</h6>
+      <h1 class="font-weight-semibold">COVID-19 Self Help Hotline</h1>
+      <h6 class="font-weight-normal text-muted pb-3">By VOIP Awesome for TADHack Orlando-mini 2020.</h6>
       <div>
-        <button class="btn btn-opacity-light mr-1">Get started</button>
-        <button class="btn btn-opacity-success ml-1">Learn more</button>
+        <a class="btn btn-opacity-light mr-1" href="self-evaluation/">Get started</a>
+        <a class="btn btn-opacity-success ml-1" href="#project-section">Learn more</a>
       </div>
       <img src="images/Group171.svg" alt="" class="img-fluid">
     </div>
   </div>
   <div class="content-wrapper">
     <div class="container">
-      <section class="features-overview" id="features-section" >
+      <section class="features-overview" id="project-section" >
         <div class="content-header">
-          <h2>How does it works</h2>
-          <h6 class="section-subtitle text-muted">One theme that serves as an easy-to-use operational toolkit<br>that meets customer's needs.</h6>
+          <h2>Our Project</h2>
+          <h6 class="section-subtitle text-muted">We will ask a series of questions to help you determine if you are at high risk for being infected by COVID-19 and will provide information about the next steps for testing and self-treatment.</h6>
         </div>
         <div class="d-md-flex justify-content-between">
           <div class="grid-margin d-flex justify-content-start">
             <div class="features-width">
               <img src="images/Group12.svg" alt="" class="img-icons">
-              <h5 class="py-3">Speed<br>Optimisation</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>  
+              <h5 class="py-3">Self<br>Evaluation</h5>
+              <p class="text-muted">Depending on your answers, there are 2-30 questions that we've curated to help you determine if you might be infected.</p>
+              <a href="self-evaluation/"><p class="readmore-link">Get Started</p></a>
             </div>
           </div>
           <div class="grid-margin d-flex justify-content-center">
             <div class="features-width">
               <img src="images/Group7.svg" alt="" class="img-icons">
-              <h5 class="py-3">SEO and<br>Backlinks</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+              <h5 class="py-3">Testing<br>Locations</h5>
+              <p class="text-muted">Search for Testing Locations in your area.</p>
+              <a href="search/"><p class="readmore-link">Search Now</p></a>
             </div>
           </div>
           <div class="grid-margin d-flex justify-content-end">
             <div class="features-width">
               <img src="images/Group5.svg" alt="" class="img-icons">
-              <h5 class="py-3">Content<br>Marketing</h5>
-              <p class="text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <a href="#"><p class="readmore-link">Readmore</p></a>
+              <h5 class="py-3">Self<br>Treatment</h5>
+              <p class="text-muted">If your symptoms are mild, you are generally healthy and you have no pre-existing auto immune condition, then you should be able to beat it with these self treatment. However, if you are having trouble breathing, please go to an emergency room.</p>
+              <a href="self-treatment/"><p class="readmore-link">Read More</p></a>
             </div>
           </div>
         </div>
       </section>     
-      <section class="digital-marketing-service" id="digital-marketing-section">
+      <section class="digital-marketing-service" id="diagram-section">
         <div class="row align-items-center">
           <div class="col-12 col-lg-7 grid-margin grid-margin-lg-0" data-aos="fade-right">
-            <h3 class="m-0">We Offer a Full Range<br>of Digital Marketing Services!</h3>
+            <h3 class="m-0">Project Logic Diagram</h3>
             <div class="col-lg-7 col-xl-6 p-0">
-              <p class="py-4 m-0 text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-              <p class="font-weight-medium text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>
+              <p class="py-4 m-0 text-muted">This will be a diagram of the programming logic</p>
+              <p class="font-weight-medium text-muted"></p>
             </div>    
           </div>
           <div class="col-12 col-lg-5 p-0 img-digital grid-margin grid-margin-lg-0" data-aos="fade-left">
             <img src="images/Group1.png" alt="" class="img-fluid">
           </div>
         </div>
+      </section>
+      <section class="why-this-project" id="why-section">
         <div class="row align-items-center">
           <div class="col-12 col-lg-7 text-center flex-item grid-margin" data-aos="fade-right">
             <img src="images/Group2.png" alt="" class="img-fluid">
           </div>
           <div class="col-12 col-lg-5 flex-item grid-margin" data-aos="fade-left">
-            <h3 class="m-0">Leading Digital Agency<br>for  Business Solution.</h3>
+            <h3 class="m-0">Why this project?</h3>
             <div class="col-lg-9 col-xl-8 p-0">
-              <p class="py-4 m-0 text-muted">Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.</p>
-              <p class="pb-2 font-weight-medium text-muted">Its smart features make it a powerful stand-alone website building tool.</p>
+              <p class="py-4 m-0 text-muted">The COVID-19 Pandemic needs to be taken seriously, and so far the US Government is failing to provide sufficient testing or treatment.</p>
+              <p class="pb-2 font-weight-medium text-muted">We're now the highest infected country, but have proportionally the lowest testing throughput.</p>
             </div>
-            <button class="btn btn-info">Readmore</button>
-          </div>
-        </div>
-      </section>     
-      <section class="case-studies" id="case-studies-section">
-        <div class="row grid-margin">
-          <div class="col-12 text-center pb-5">
-            <h2>Our case studies</h2>
-            <h6 class="section-subtitle text-muted">Lorem ipsum dolor sit amet, tincidunt vestibulum.</h6>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-primary text-center card-contents">
-                  <div class="card-image">
-                    <img src="images/Group95.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Online marketing</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Online Marketing</h6>
-                    <p>Seo, Marketing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-warning text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group108.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Development</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Development</h6>
-                    <p>Developing, Designing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card mb-3 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-violet text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group126.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Web Designing</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Web Designing</h6>
-                    <p>Designing, Developing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 stretch-card" data-aos="zoom-in" data-aos-delay="600">
-            <div class="card color-cards">
-              <div class="card-body p-0">
-                <div class="bg-success text-center card-contents">
-                  <div class="card-image">
-                      <img src="images/Group115.svg" class="case-studies-card-img" alt="">
-                  </div>  
-                  <div class="card-desc-box d-flex align-items-center justify-content-around">
-                    <div>
-                      <h6 class="text-white pb-2 px-3">Know more about Software Development</h6>
-                      <button class="btn btn-white">Read More</button>
-                    </div>
-                  </div>
-                </div>   
-                <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Software Development</h6>
-                    <p>Developing, Designing</p>
-                </div>
-              </div>
-            </div>
+            <p><a href="https://www.google.com/covid19-map/" target="Googles COVID-19 Map" class="btn btn-info">Google's COVID-19 Map</a></p>
+            <p><a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="ARC GIS COVID-19 Map" class="btn btn-info">ARC GIS COVID-19 Map</a></p>
           </div>
         </div>
       </section>     
@@ -223,7 +142,8 @@
             <h2>The Team</h2>
             <h6 class="section-subtitle text-muted m-0">VOIP Awesome Inc</h6>
           </div>
-          <div class="col-4 text-center pb-5">
+          <div class="sm-hidden col-md-3 col-lg-4"></div>
+          <div class="col-12 col-md-6 col-lg-4 text-center pb-5">
             <div class="owlr-carousel owl-theme grid-margin">
               <div class="card customer-cards">
                 <div class="card-body">
@@ -243,61 +163,59 @@
       <section class="contact-us" id="contact-section">
         <div class="contact-us-bgimage grid-margin" >
           <div class="pb-4">
-            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you have any projects?</h4>
-            <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
+            <h4 class="px-3 px-md-0 m-0" data-aos="fade-down">Do you have any questions?</h4>
           </div>
           <div data-aos="fade-up">
-            <button class="btn btn-rounded btn-outline-danger">Contact us</button>
+            <button class="btn btn-rounded btn-outline-danger" data-toggle="modal" data-target="#contactUsModal">Contact us</button>
           </div>          
         </div>
       </section>
       <section class="contact-details" id="contact-details-section">
         <div class="row text-center text-md-left">
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            <img src="images/vai/voip-awesome-icon-380.png" style="max-height:32px;" alt="" class="pb-2">
+          <div class="col-12 col-md-6 col-lg-4 grid-margin">
+            <a href="https://voipawesome.com" target="VOIP Awesome" class="navbar-brand">
+                <img src="images/vai/voip-awesome-icon-380.png" style="max-height:24px;" alt="">
+                <span class="brand-text">
+                    <span class="text text-danger"><b>VOIP</b></span> Awesome
+                </span>
+            </a>
             <div class="pt-2">
-              <p class="text-muted m-0">mikayla_beer@feil.name</p>
-              <p class="text-muted m-0">906-179-8309</p>
+              <p class="text-muted m-0">Jambu Atchison
+              <p class="text-muted m-0"><a href="mailto:jambu@voipawesome.com?subject=TADHack%20Orlando-mini%202020&body=Hey,%20I%20would%20like%20to%20know%20more%20about%20your%20hack." target="_blank" rel="noopener noreferrer">jambu@voipawesome.com</a></p>
+              <p class="text-muted m-0"><a href="tel:+18009551652">+1 (800) 955-1652</a></p>
             </div>         
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            <h5 class="pb-2">Get in Touch</h5>
-            <p class="text-muted">Don’t miss any updates of our new templates and extensions.!</p>
-            <form>
-              <input type="text" class="form-control" id="Email" placeholder="Email id">
-            </form>
-            <div class="pt-3">
-              <button class="btn btn-dark">Subscribe</button>
-            </div>   
+            <h5 class="pb-2">Project References</h5>
+            <ul>
+                <li><a href="https://tadhack.com/2020/mini-orlando/" target="TADHack Orlando-mini 2020"><p class="m-0 pb-2">TADHack Orlando-mini 2020</p></a></li>
+                <li><a href="https://admin.apidaze.io/register" target="VoIP Innovations Apidaze"><p class="m-0 pt-1 pb-2">VoIP Innovations Apidaze</p></a></li>
+                <li><a href="https://github.com/necival85/tadhack2020-orlando" target="Github/necival85/tadhack2020-orlando"><p class="m-0 pt-1 pb-2">Project on Github</p></a></li>
+                <li><a href="https://voipawesome.com" target="VOIP Awesome"><p class="m-0 pt-1 pb-2">VOIP Awesome</p></a></li>
+                <li><a href="https://www.bootstrapdash.com/product/simple-landing-page/" target="Bootstrapdash"><p class="m-0 pt-1">Bootstrap Dash</p></a></li>
+            </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
-            <h5 class="pb-2">Our Guidelines</h5>
-            <a href="#"><p class="m-0 pb-2">Terms</p></a>   
-            <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
-            <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a> 
-            <a href="#"><p class="m-0 pt-1">Discover</p></a> 
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 grid-margin">
-              <h5 class="pb-2">Our address</h5>
-              <p class="text-muted">518 Schmeler Neck<br>Bartlett. Illinois</p>
+              <h5 class="pb-2">Social</h5>
               <div class="d-flex justify-content-center justify-content-md-start">
-                <a href="#"><span class="mdi mdi-facebook"></span></a>
-                <a href="#"><span class="mdi mdi-twitter"></span></a>
-                <a href="#"><span class="mdi mdi-instagram"></span></a>
-                <a href="#"><span class="mdi mdi-linkedin"></span></a>
+                <a href="https://www.youtube.com/channel/UCkMzLTeupedWH34-VpGeWVQ" target="YouTube"><span class="mdi mdi-youtube"></span></a>
+                <a href="https://www.facebook.com/voipawesome/" target="Facebook"><span class="mdi mdi-facebook"></span></a>
+                <a href="https://twitter.com/voipawesome" target="Twitter"><span class="mdi mdi-twitter"></span></a>
+                <a href="https://www.instagram.com/voipawesome/" target="Instagram"><span class="mdi mdi-instagram"></span></a>
+                <a href="https://www.linkedin.com/company/voipawesome/" target="Linkedin"><span class="mdi mdi-linkedin"></span></a>
               </div>
           </div>
         </div>  
       </section>
       <footer class="border-top">
-        <p class="text-center text-muted pt-4">Copyright © 2019<a href="https://www.bootstrapdash.com/" class="px-1">Bootstrapdash.</a>All rights reserved.</p>
+        <p class="text-center text-muted pt-4">Copyright © 2020<a href="https://voipawesome.com" target="VOIP Awesome" class="px-1">VOIP Awesome.</a> Licensed under <a href="https://github.com/necival85/tadhack2020-orlando/blob/master/LICENSE" target="Copyright License">GNU General Public License v3.0</a>.</p>
       </footer>
       <!-- Modal for Contact - us Button -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
+              <h4 class="modal-title" id="contactUsModalLabel">Contact Us</h4>
             </div>
             <div class="modal-body">
               <form>
@@ -307,11 +225,15 @@
                 </div>
                 <div class="form-group">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                  <input type="email" class="form-control" id="Email-1" placeholder="you@example-email.com">
+                </div>
+                <div class="form-group">
+                  <label for="Subject">Subject</label>
+                  <input type="text" class="form-control" id="Subject" placeholder="Subject" value="TADHack Orlando-mini 2020">
                 </div>
                 <div class="form-group">
                   <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                  <textarea class="form-control" id="Message" placeholder="Enter your Message">Hello, I would like to know more about your hack.</textarea>
                 </div>
               </form>
             </div>
