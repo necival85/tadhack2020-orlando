@@ -9,11 +9,13 @@ function scrollFunction() {
       $(".navbar").addClass("fixed-top");
       element.classList.add("header-small");
       $("body").addClass("body-top-padding");
+      $('.nav-link-home').removeClass("active");
   } else {
       $("#div-scroll-to-top").hide();
       $(".navbar").removeClass("fixed-top");
       element.classList.remove("header-small");
       $("body").removeClass("body-top-padding");
+      $('.nav-link-home').addClass("active");
   }
 }
 
