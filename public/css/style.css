@@ -9885,7 +9885,7 @@ footer a:hover {
     background: white;
     z-index: 20;
     height: 100vh;
-    padding: 10px 0px 0px 50px;
+    padding: 10px 0px 0px 40px;
     width: 250px;
     transform: translateX(100%);
     transition: transform 0.25s ease-in-out;
